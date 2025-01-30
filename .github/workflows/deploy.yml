@@ -2,7 +2,7 @@ name: GitHub Pages Deploy
 
 on:
   push:
-    branches: [main] # or master
+    branches: [main]  # or master
   workflow_dispatch:
 
 permissions:
@@ -18,9 +18,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
+        
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
-          artifact-dir: src  # Deploy from the 'src' folder
+          artifact-dir: src  # The 'src' folder contains your index.html
