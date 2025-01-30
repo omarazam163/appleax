@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="dark:bg-black dark:text-white">
+      <div
+        class="mx-auto container flex justify-between px-10 py-6 items-center z-50"
+      >
+        <a><img src="../public/images/asset 0.png"/></a>
+        <ul class="text-l hidden md:flex justify-around">
+          <li><a href="#" class="hover:text-blue-600 px-4">Home</a></li>
+          <li><a href="#" class="hover:text-blue-600 px-4">About</a></li>
+          <li><a href="#" class="hover:text-blue-600 px-4">contact</a></li>
+        </ul>
+        <div class="flex justify-around items-center">
+          <button class="black md:hidden mr-4 text-3xl" id="folding-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <button id="night-btn" class="text-4xl">
+            <i class="fa-solid fa-moon" id="moon"></i>
+          </button>
+        </div>
+      </div>
+      <ul
+        class="flex-col hidden justify-center text-center md:hidden text-xl z-0"
+        id="folding-content"
+      >
+        <li class="py-2 pt-0">
+          <a href="#" class="hover:text-blue-600">Home</a>
+        </li>
+        <li class="py-2">
+          <a href="#" class="hover:text-blue-600">About</a>
+        </li>
+        <li class="py-2">
+          <a href="#" class="hover:text-blue-600">contact</a>
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <div class="h-[500px] items-center relative w-[100%]" id="gallery">
+        <div id="wrapper-galley">
+          <img src="../public/images/testtwo.jpg" id="img1" class="myimg" />
+          <img
+            src="../public/images/fabian-irsara-67l-QujB14w-unsplash.jpg"
+            id="img2"
+            class="myimg"
+          />
+          <img
+            src="../public/images/christopher-gower-m_HRfLhgABo-unsplash.jpg"
+            id="img3"
+            class="myimg"
+          />
+          <img
+            src="../public/images/ales-nesetril-Im7lZjxeLhg-unsplash-EFNYJM67.jpg"
+            id="img4"
+            class="myimg"
+          />
+        </div>
+        <div
+          class="flex justify-between w-11/12 absolute left-[50%] translate-x-[-50%] z-50 top-[50%] translate-y-[-50%]"
+        >
+          <button
+            id="prev"
+            class="bg-[#0000005c] rounded-full p-3 opacity-70 hover:opacity-100"
+          >
+            <img
+              src="../public/images/download.svg"
+              alt=""
+              class="w-5 h-5 invert"
+            />
+          </button>
+          <button
+            id="next"
+            class="bg-[#0000005c] rounded-full p-3 opacity-70 hover:opacity-100"
+          >
+            <img
+              src="../public/images/download (1).svg"
+              alt=""
+              class="w-5 h-5 invert"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="py-6 bg-white dark:bg-black">
+      <h1 class="text-[48px] text-center dark:text-white">Tools</h1>
+      <p class="text-center mb-5 dark:text-white">Lorem ipsum dolor sit amet consectetur !</p>
+      <div class="w-11/12 mx-auto container flex flex-wrap mycont flex-grow ">
+        <div class="w-full md:w-4/12">
+          <div
+            class="text-center border p-7 border-black rounded relative w-full bg-white"
+          >
+            <h3 class="mb-4 myunderline text-2xl relative">Product</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <div
+              class="absolute w-[40px] h-[40px] bg-[#fbd5d5] rounded-full flex justify-center items-center top-0 left-[50%] translate-x-[-50%] translate-y-[-50%]"
+            >
+              <i class="fa-solid fa-anchor-circle-exclamation"></i>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-4/12">
+          <div
+            class="text-center border p-7 border-black rounded relative w-full bg-white"
+          >
+            <h3 class="mb-4 myunderline text-2xl relative">Product</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <div
+              class="absolute w-[40px] h-[40px] bg-[#fbd5d5] rounded-full flex justify-center items-center top-0 left-[50%] translate-x-[-50%] translate-y-[-50%]"
+            >
+              <i class="fa-solid fa-h-square"></i>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-4/12">
+          <div
+            class="text-center border p-7 border-black rounded relative w-full bg-white"
+          >
+            <h3 class="mb-4 myunderline text-2xl relative">Product</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <div
+              class="absolute w-[40px] h-[40px] bg-[#fbd5d5] rounded-full flex justify-center items-center top-0 left-[50%] translate-x-[-50%] translate-y-[-50%]"
+            >
+              <i class="fa-solid fa-jar-wheat"></i>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-4/12 ">
+          <div
+            class="text-center border p-7 border-black rounded relative w-full bg-white"
+          >
+            <h3 class="mb-4 myunderline text-2xl relative">Product</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <div
+              class="absolute w-[40px] h-[40px] bg-[#fbd5d5] rounded-full flex justify-center items-center top-0 left-[50%] translate-x-[-50%] translate-y-[-50%]"
+            >
+              <i class="fa-solid fa-ladder-water"></i>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-4/12 ">
+          <div
+            class="text-center border p-7 border-black rounded relative w-full bg-white"
+          >
+            <h3 class="mb-4 myunderline text-2xl relative">Product</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <div
+              class="absolute w-[40px] h-[40px] bg-[#fbd5d5] rounded-full flex justify-center items-center top-0 left-[50%] translate-x-[-50%] translate-y-[-50%]"
+            >
+              <i class="fa-solid fa-icicles"></i>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-4/12">
+          <div
+            class="text-center border p-7 border-black rounded relative w-full bg-white"
+          >
+            <h3 class="mb-4 myunderline text-2xl relative">Product</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <div
+              class="absolute w-[40px] h-[40px] bg-[#fbd5d5] rounded-full flex justify-center items-center top-0 left-[50%] translate-x-[-50%] translate-y-[-50%]"
+            >
+              <i class="fa-solid fa-wrench"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-[#212529] p-8 flex justify-between items-center py-[50px]">
+      <div>
+        <img src="../public/images/asset 18.png">
+      </div>
+      <div>
+        <ul class="flex text-white">
+          <li><a><i class="fa-brands px-2 fa-facebook cursor-pointer"></i></a></li>
+          <li><a><i class="fa-brands px-2 fa-twitter cursor-pointer"></i></a></li>
+          <li><a><i class="fa-brands px-2 fa-linkedin cursor-pointer"></i></a></li>
+          <li><a><i class="fa-brands px-2 fa-youtube cursor-pointer"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
