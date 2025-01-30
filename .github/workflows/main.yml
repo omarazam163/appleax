@@ -1,0 +1,25 @@
+name: Deploy HTML to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Runs on push to main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy to GitHub Pages
+        run: |
+          mkdir public
+          cp src/index.html public/index.html
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "github-actions"
+          git checkout --orphan gh-pages
+          git --work-tree=public add --all
+          git commit -m "Deploy index.html"
+          git push origin HEAD:gh-pages --force
